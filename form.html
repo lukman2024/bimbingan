@@ -4,19 +4,42 @@
     <title>html form</title>
 </head>
 <body>
-    <label for="username">username:</label>
-    <input type="text" id="username">
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+         <td><label for="username">username:</label> <input type="text" id="username"></td>
+        </tr>
     <br>
-    <label for="password">password:</label>
-    <input type="password" id="password">
+        <tr>
+         <td><label for="password">password:</label><input type="password" id="password"></td>
+        </tr>
     <br>
-    <input type="radio" id="pria" name="jeniskelamin"><label for="pria">pria</label>
-    <input type="radio" id="perempuan" name="jeniskelamin"><label for="perempuan">perempuan</label>
+        <tr>
+          <td><input type="radio" id="pria" name="jeniskelamin"><label for="pria">pria</label>
+          <input type="radio" id="perempuan" name="jeniskelamin"><label for="perempuan">perempuan</label></td>
+        </tr>
     <br>
-    <input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
-    <input type="checkbox" id="belajar"><label for="belajar">belajar</label>
-    <input type="checkbox" id="olahraga"><label for="olahraga">olahraga</label>
+        <tr>
+          <td><input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
+          <input type="checkbox" id="belajar"><label for="belajar">belajar</label>
+          <input type="checkbox" id="olahraga"><label for="olahraga">olahraga</label></td>
+        </tr>
     <br>
-    <input type="submit" value="kirim">
+        <tr>
+          <td><label for="textarea">textarea :</label>
+          <textarea id="textarea"></textarea></td>
+        </tr>
+    <br>
+        <tr>
+        <td><select name="" id="">
+         <option value="">bandung</option>
+         <option value="">jakarta</option>
+         <option value="">yokyakarta</option>
+        </select></td>
+        </tr>
+    <br>
+        <tr>
+         <td><input type="submit" value="kirim"></td>
+        </tr>
+    </table>
 </body>
 </html>
