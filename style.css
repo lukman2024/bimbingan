@@ -1,24 +1,44 @@
-body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+/* ketika belum ter click sama sekali */
+.hello:link {
+    color: rgb(21, 255, 0);
 }
-h1, h2 {
-    color: aqua;
+/* ketika di sorot */
+.hello:hover {
+    color: pink;
+    font-family: arial;
+    font-size: 20px;
 }
-
-ul li a {
-    color: bisque;
-    text-decoration: none;
+/* ketika di click  */
+.hello:active {
+    font-style: italic;
 }
-
-ol li a {
+/* visited ketika sudah di klick */
+.hello:visited {
     color: red;
-    text-decoration: none;
 }
 
-#p1 {
+
+
+li:first-child a{
     color: aquamarine;
 }
 
-.p2 {
-    color: blue;
+li:last-child a {
+    color: red;
+}
+
+Li:nth-child(3) a {
+    color: orchid;
+}
+
+li:nth-child(3) a:hover {
+    font-size: 8px;
+}
+
+p:first-of-type {
+    color: aqua;
+}
+
+p:last-of-type {
+    color: red;
 }
