@@ -9,3 +9,6 @@ img {
     float: right;
     margin: 5px;
 }
+.clean {
+    clear: right;
+}
