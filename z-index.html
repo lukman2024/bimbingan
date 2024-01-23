@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>static dan relative</title>
-    <link rel="stylesheet" href="style.css">
+    <title>z-index</title>
     <style>
         div {
             width: 200px;
             height: 200px;
+            position: absolute;
         }
         .satu {
-            background-color: lightgreen;
+            background-color: aqua;
+            z-index: 3;
         }
         .dua {
             background-color: violet;
-            position: relative;
-            top: 30px;
+            top: 100px;
+            left: 100px;
         }
         .tiga {
-            background-color: blue;
+            background-color: yellow;
+            top: 200px;
+            left: 200px;
+            z-index: 1;
         }
-        
     </style>
 </head>
 <body>
