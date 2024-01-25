@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        /* @keyframes
+        animation-name
+        animation-duration
+        animation-delay
+        animation-iteration-count
+        animation-direction
+        animation-timing-function
+        animation-fill-mode
+        animation */
+        .kotak{
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            animation: animasi 2s ease 1 alternate forwards;    
+        }
+
+        @keyframes animasi {
+            0% {
+                width: 200px;
+                height: 200px;
+            }
+            50% {
+                height: 500px;
+                width: 200px;
+            }
+            100% {
+                width: 500px;
+                height: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak"></div>
+    <a href="https://dosenit.com/css/animasi-di-css">click di sini untuk belajar lebih lanjut</a>
+</body>
+</html>
