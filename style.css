@@ -1,61 +1,43 @@
-html {
-    font-size: 10px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'roboto', sans-serif;
-    color: #333;
-    text-align: center;
-    background-color: #eee;
-    line-height: 1.6;
-    font-weight: 300px;
-    min-height: 2000px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.8em;
 }
 
-/* em */
-/* .typography {
-    font-size: 10px;
-}
-.container {
-    width: 80%;
-    margin: auto;
-}
-
-.typography {
+header {
+    background-color: #ccc;
+    background-image: url(img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     display: flex;
 }
 
-.typography .col {
-    flex: 1;
-    margin: 0 0.5em;
-    padding: 0 0.5em;
-} */
-
-/* rem */
-
-/* .col-rem h2 {
-    font-size: 2rem;
-}
-
-.col-rem p {
-    font-size: 1.5rem;
-} */
-
-.btn {
-    display: inline-block ;
-    background: #333;
-    font-weight: 700px;
+h1 {
+    font-size: 4max;
+    /* font-size: 4rem; */
+    line-height: 1.2em;
     color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 1em 3em;
-    margin: 0 1.5rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin: auto;
 }
 
-.btn-sm {
-    font-size: 0.5em;
+section {
+    margin: 30px auto;
+    width: 80%;
 }
 
-.btn-lg {
-    font-size: 2em;
+section .detail {
+    font-size: 1.4rem;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 0.5em 0;
+    margin-bottom: 2em;
+    color: #333;
 }
