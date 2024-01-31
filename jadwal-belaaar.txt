@@ -1,3 +1,5 @@
 jadwal
 1.mulai jam 8
-2.selesai jam 5
+2.selesai jam 16
+tidur jam 22
+bangun jam 4
