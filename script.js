@@ -1,9 +1,5 @@
-alert("selamat datang");
-var lagi = true;
-while (lagi == true) {
-  var nama = prompt("masukan nama:");
-  alert("halo " + nama);
-
-  lagi = confirm("coba lagi?");
+var nilaiAwal = 1;
+while (nilaiAwal <= 100) {
+  console.log("Hello world " + nilaiAwal + "x");
+  nilaiAwal++;
 }
-alert("terimakasih..");
