@@ -1,16 +1,9 @@
-var item = prompt("masukkan nama makanan / minuman : \n (contoh: nasi, daging, susu, hamburger, softdrink,)");
+var s = "";
+for (var i = 10; i > 0; i--) {
+  for (var j = 0; j < i; j++) {
+    s += "* ";
+  }
 
-switch (item) {
-  case "nasi":
-  case "daging":
-  case "susu":
-    alert("makanan / minuman SEHAT");
-    break;
-  case "hamburger":
-  case "softdrink":
-    alert("makanan / minuman TIDAK SEHAT");
-    break;
-  default:
-    alert("anda memasukan nama makanan / minuman yang salah!");
-    break;
+  s += "\n";
 }
+console.log(s);
