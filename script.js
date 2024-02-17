@@ -1,8 +1,16 @@
-var angka = prompt("Masukkan angka:");
-if (angka % 2 == 0) {
-  alert(angka + " ini adalah bilangan GENAP");
-} else if (angka % 2 == 1) {
-  alert(angka + " Ini adalah bilangan GANJIL");
-} else {
-  alert(" ini adalah HURUF");
+var item = prompt("masukkan nama makanan / minuman : \n (contoh: nasi, daging, susu, hamburger, softdrink,)");
+
+switch (item) {
+  case "nasi":
+  case "daging":
+  case "susu":
+    alert("makanan / minuman SEHAT");
+    break;
+  case "hamburger":
+  case "softdrink":
+    alert("makanan / minuman TIDAK SEHAT");
+    break;
+  default:
+    alert("anda memasukan nama makanan / minuman yang salah!");
+    break;
 }
