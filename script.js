@@ -1,12 +1,8 @@
-var jmlAngkot = 10;
-var angkotBeroprasi = 4;
-var noAngkot = 1;
-
-while (noAngkot <= angkotBeroprasi) {
-  console.log("angkot no. " + noAngkot + " sedang beroprasi");
-  noAngkot++;
-}
-
-for (noAngkot <= angkotBeroprasi + 1; noAngkot <= jmlAngkot; noAngkot++) {
-  console.log("angkot no. " + noAngkot + " sedang rusak");
+var angka = prompt("Masukkan angka:");
+if (angka % 2 == 0) {
+  alert(angka + " ini adalah bilangan GENAP");
+} else if (angka % 2 == 1) {
+  alert(angka + " Ini adalah bilangan GANJIL");
+} else {
+  alert(" ini adalah HURUF");
 }
