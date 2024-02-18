@@ -1,9 +1,38 @@
-var s = "";
-for (var i = 10; i > 0; i--) {
-  for (var j = 0; j < i; j++) {
-    s += "* ";
+var tanya = true;
+while (tanya) {
+  var p = prompt("pilih : batu, gunting, kertas");
+
+  var comp = Math.random();
+
+  if (comp < 0.34) {
+    comp = "batu";
+  } else if (comp >= 0.34 && comp < 0.67) {
+    comp = "gunting";
+  } else {
+    comp = "kertas";
   }
 
-  s += "\n";
+  var hasil = "";
+  if (p == comp) {
+    hasil = "SERI";
+  } else if (p == "kertas") {
+    // if( comp == 'gajah' ) {
+    //     hasil = 'KALAH!';
+    // } else {
+    //     hasil = 'MENANG!';
+    // }
+    hasil = comp == "batu" ? "MENANG!" : "KALAH!";
+  } else if (p == "gunting") {
+    hasil = (comp = "batu") ? "KALAH!" : "MENANG!";
+  } else if (p == "batu") {
+    hasil = (comp = "kertas") ? "KALAH!" : "MENANG!";
+  } else {
+    hasil = "memasukkan pilihan yang salah";
+  }
+
+  alert("kamu memilih : " + p + " computer memilih : " + comp + "\nkamu " + hasil);
+
+  tanya = confirm("main lagi?");
 }
-console.log(s);
+
+alert("terimakasih sudah bermain");
