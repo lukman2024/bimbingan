@@ -33,6 +33,16 @@ var arr = ["shandika", "galih", "nofa"];
 // console.log(arr.join(' - '))
 
 //3.unshift dan shift
-arr.unshift("doddy");
-arr.shift();
+// arr.unshift("doddy");
+// arr.shift();
+// console.log(arr.join(" - "));
+
+//4.splice
+arr.splice(1, 2, "doody", "fitri");
+console.log(arr.join(" - "));
+
+//5.slice
+var arr = ["shandhika", "galih", "nofa", "doddy", "fitri"];
+var arr2 = arr.slice(1, 4);
+console.log(arr.join(" - "));
 console.log(arr.join(" - "));
