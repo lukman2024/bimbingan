@@ -1,15 +1,10 @@
-function jumlahVolumeDuaKubus(a, b) {
-  var volumeA;
-  var voluneB;
-  var total;
-
-  volumeA = a * a * a;
-  voluneB = b * b * b;
-
-  total = volumeA + voluneB;
-
-  return total;
+function tambah() {
+  var hasil = 0;
+  for (var i = 0; i < arguments.length; i++) {
+    hasil += arguments[i];
+  }
+  return hasil;
 }
 
-alert(jumlahVolumeDuaKubus(8, 3));
-alert(jumlahVolumeDuaKubus(5, 10));
+var coba = tambah(1, 2, 3, 4);
+console.log(coba);
