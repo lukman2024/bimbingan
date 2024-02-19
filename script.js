@@ -1,5 +1,7 @@
-function jumlahVolumDuaKubus(a, b) {
-  return a * a * a * b * b * b;
-}
+var a = 1;
 
-alert(jumlahVolumDuaKubus(8, 3));
+function tes(a) {
+  console.log(a);
+}
+tes(a);
+console.log(a);
