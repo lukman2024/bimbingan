@@ -1,7 +1,6 @@
-var a = 1;
-
-function tes(a) {
-  console.log(a);
+function faktoriala(n) {
+  if (n == 0) return 1;
+  return n * faktoriala(n - 1);
 }
-tes(a);
-console.log(a);
+
+faktoriala(5);
