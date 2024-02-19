@@ -70,8 +70,15 @@
 // console.log(angka2.join(' - '));
 
 //8. sort
-var angka = [1, 2, 5, 10, 20, 7, 4, 6];
-angka.sort(function (a, b) {
-  return a - b;
+// var angka = [1, 2, 5, 10, 20, 7, 4, 6];
+// angka.sort(function (a, b) {
+//   return a - b;
+// });
+// console.log(angka.join(" - "));
+
+//9.filter
+var angka = [1, 2, 10, 5, 20, 3, 6, 8, 4];
+var angka2 = angka.find(function (x) {
+  return x > 5;
 });
-console.log(angka.join(" - "));
+console.log(angka2);
