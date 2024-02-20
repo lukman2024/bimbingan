@@ -1,26 +1,29 @@
-//this
-// var a = 10;
-// console.log(window.a);
+//membuat object
+function Angkot(sopir, trayek, penumpang, kas) {
+  this.sopir = sopir;
+  this.trayek = trayek;
+  this.penumpang = penumpang;
+  this.kas = kas;
 
-//cara 1-function declaration
-// function hallo() {
-//   console.log(this);
-//   console.log("hallo");
-// }
-// this.hallo();
+  this.penumpangNaik = function (namaPenumpang) {
+    this.penumpang.push(namaPenumpang);
+    return this.penumpang;
+  };
 
-//cara 2-object literal
-// var obj = { a: 10, nama: "lukman" };
-// obj.hallo = function () {
-//   console.log(this);
-//   console.log("hallo");
-// };
-// obj.hallo();
-
-//cara 3-constructour
-function Hallo() {
-  console.log(this);
-  console.log("hallo");
+  this.penumpangTurun = function (namaPenumpang, bayar) {
+    if (this.penumpang.length == 0) {
+      alert("angkot masih kosong");
+      return false;
+    }
+    for (var i = 0; i < this.penumpang.length; i++) {
+      if (this.penumpang[i] == namaPenumpang) {
+        this.penumpang[i] == undefined;
+        this.kas += bayar;
+        return this.penumpang;
+      }
+    }
+  };
 }
-var obj1 = new Hallo();
-var obj2 = new Hallo();
+
+var angko1 = new Angkot("lukmen", ["Cichaheum", "cibiru"], [], 0);
+var angko2 = new Angkot("thomas", ["Tom cruis", "Ciroyom"], [], 0);
