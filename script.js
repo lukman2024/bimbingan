@@ -1,34 +1,13 @@
-// //dom selectio
-// //getElementById
-// const judul = document.getElementById("judul");
-// judul.style.color = "red";
-// judul.style.backgroundColor = "#ccc";
-// judul.innerHTML = "lukmen";
+// const judul = document.getElementById('judul');
+// judul.innerHTML = '<em>lukman </em>';
 
-// // document.getElementsByTagName()
-// const p = document.getElementsByTagName("p");
+// const sectionA =document.querySelector('section#a');
+// sectionA innerHTML = '<div><p>paragrafi</p></div>'
 
-// for (let i = 0; i < p.length; i++) {
-//   p[i].style.backgroundColor = "lightblue";
-// }
+// const judul =document.querySelector('#judul');
+// judul.computedStyleMap.color = 'lightblue';
+// judul.style.backgroundColor = 'salmon';
 
-// const h1 = document.getElementsByTagName("h1")[0];
-// h1.stylefontSize = "50px";
-
-// //document.getElementsBYclassName
-// const p1 = document.getElementsByClassName("p1")[0];
-// p1.innerHTML = "ini di ubah dari javascript";
-
-//document.quarySelector
-const p4 = document.querySelector("#b p");
-p4.style.color = "green";
-p4.style.fontSize = "30px";
-
-const li2 = document.querySelector("section#b ul li:nth-child(2)");
-li2.style.backgroundColor = "orange";
-
-// document.querySelectorAll()
-const p = document.querySelectorAll("p");
-for (let i = 0; i < p.length; i++) {
-  p[i].style.backgroundColor = "lightblue";
-}
+// const judul = document.getElementsByTagName('h1')[0];
+// judul.setAttribute('name', 'lukman')
+// const a = document.querySelector('section a');
